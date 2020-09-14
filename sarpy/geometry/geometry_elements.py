@@ -1645,7 +1645,7 @@ class Polygon(GeometryObject):
                 in_poly &= ~ir.contain_coordinates(pts_x, pts_y, block_size=block_size)
 
         if len(o_shape) == 0:
-            return in_poly[0]
+            return in_poly
         else:
             return numpy.reshape(in_poly, o_shape)
 
