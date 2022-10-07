@@ -1,0 +1,4 @@
+black
+lxml
+mypy
+pytest

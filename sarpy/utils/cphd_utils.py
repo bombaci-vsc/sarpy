@@ -16,7 +16,7 @@ import argparse
 import sys
 import functools
 from xml.dom import minidom
-from typing import Union, TextIO, BinaryIO
+from typing import Union, TextIO, BinaryIO, Callable
 import os
 from io import StringIO
 

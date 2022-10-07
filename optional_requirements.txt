@@ -1,0 +1,8 @@
+h5py
+lxml
+matplotlib
+pillow
+pyproj
+pytest
+setuptools #pkg_resources
+shapely

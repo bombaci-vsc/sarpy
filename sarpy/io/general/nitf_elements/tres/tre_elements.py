@@ -299,12 +299,12 @@ class TREExtension(TRE):
         return self._tag_value
 
     @property
-    def DATA(self):  # type: () -> _data_type
+    def DATA(self):  # type: () -> TREElement
         return self._data
 
     @DATA.setter
     def DATA(self, value):
-        # type: (Union[bytes, _data_type]) -> None
+        # type: (Union[bytes, TREElement]) -> None
         if isinstance(value, self._data_type):
             self._data = value
         elif isinstance(value, bytes):

@@ -10,9 +10,13 @@ import re
 import shutil
 import tempfile
 
-from lxml import etree
 import numpy as np
 import pytest
+
+try:
+    from lxml import etree
+except ImportError:
+    pytest.skip("lxml not available.  Skipping cphd consistency tests. ")
 
 from sarpy.consistency.cphd_consistency import main, CphdConsistency, \
     read_header, strip_namespace

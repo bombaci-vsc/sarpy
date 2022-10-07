@@ -682,7 +682,7 @@ class NITFLoop(NITFElement):
 
     @property
     def values(self):
-        # type: () -> Tuple[_child_class, ...]
+        # type: () -> Tuple[NITFElement, ...]
         return self._values
 
     @values.setter
@@ -703,7 +703,7 @@ class NITFLoop(NITFElement):
         return len(self._values)
 
     def __getitem__(self, item):
-        # type: (Union[int, slice]) -> Union[_child_class, List[_child_class]]
+        # type: (Union[int, slice]) -> Union[NITFElement, List[NITFElement]]
         return self._values[item]
 
     def get_bytes_length(self):
